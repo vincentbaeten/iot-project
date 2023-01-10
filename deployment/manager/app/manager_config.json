@@ -1,0 +1,8 @@
+{
+  "realms" : {
+    "default" : {
+      "appTitle" : "IoT",
+      "language" : "en"
+    }
+  }
+}
