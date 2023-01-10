@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  client:
+    privileged: true
+    image: ghcr.io/vincentbaeten/iot-project/client:latest
+    restart: always
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    env_file:
+      - ".env"
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    command: --interval 10
