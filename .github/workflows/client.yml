@@ -36,3 +36,4 @@ jobs:
           context: "{{defaultContext}}:client"
           push: true
           tags: ghcr.io/vincentbaeten/iot-project/client:latest
+          platforms: linux/amd64,linux/arm/v7
