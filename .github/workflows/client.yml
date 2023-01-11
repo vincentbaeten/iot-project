@@ -35,4 +35,4 @@ jobs:
         with:
           context: "{{defaultContext}}:client"
           push: true
-          tags: vincentbaeten/iot-project/client:latest
+          tags: ghcr.io/vincentbaeten/iot-project/client:latest
